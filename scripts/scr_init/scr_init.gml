@@ -5,26 +5,33 @@
 
 /// @description Perform general startup initialization.
 function scr_init() {
-	global.step = 0
-	global.window = new Pos(256, 224);
-	global.window_scale = 3;
 	
+	// Initialize global timer.
+	global.step = 0
+	
+	// Set up default collision code.
 	global.border_top = TileType.NONE;
 	global.border_bottom = TileType.NONE;
 	global.border_left = TileType.NONE;
 	global.border_right = TileType.NONE;
 	
+	// Add custom demo font.
 	var font = font_add_sprite_ext(spr_font, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-×!.©", false, 0);
 	draw_set_font(font);
 	
-	camera_set_view_size(view_camera[0], global.window.x, global.window.y);
-    view_set_wport(view_camera[0], global.window.x);
-    view_set_hport(view_camera[0], global.window.y);
-	
+	// Set default window parameters.
+	global.window = new Pos(256, 224);
+	global.window_scale = 3;
 	window_set_size(global.window.x * global.window_scale, global.window.y * global.window_scale);
 	window_set_cursor(cr_none);
 	window_center();
 	
+	// Set default viewport parameters.
+	camera_set_view_size(view_camera[0], global.window.x, global.window.y);
+    view_set_wport(view_camera[0], global.window.x);
+    view_set_hport(view_camera[0], global.window.y);
+	
+	// Open testing room.
 	scr_room_goto(rm_test);
 }
 
