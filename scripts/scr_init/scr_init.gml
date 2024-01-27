@@ -14,7 +14,7 @@ function scr_init() {
 	global.border_bottom = TileType.NONE;
 	global.border_left = TileType.NONE;
 	global.border_right = TileType.NONE;
-	global.debug_physics = false;
+	global.debug_physics = true;
 	
 	// Add custom demo font.
 	var font = font_add_sprite_ext(spr_font, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-×!.©", false, 0);
