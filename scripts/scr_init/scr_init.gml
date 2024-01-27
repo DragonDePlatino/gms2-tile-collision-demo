@@ -7,13 +7,14 @@
 function scr_init() {
 	
 	// Initialize global timer.
-	global.step = 0
+	global.step = 0;
 	
 	// Set up default collision code.
 	global.border_top = TileType.NONE;
 	global.border_bottom = TileType.NONE;
 	global.border_left = TileType.NONE;
 	global.border_right = TileType.NONE;
+	global.debug_physics = false;
 	
 	// Add custom demo font.
 	var font = font_add_sprite_ext(spr_font, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-×!.©", false, 0);

@@ -13,6 +13,8 @@ function scr_draw_box(box, color) {
 
 /// @description Render the bounding box and overlapping tiles of current instance.
 function scr_draw_hitbox() {
+	if (!global.debug_physics) return;
+	
 	var hitbox = scr_instance_box();
 	var tilebox = hitbox.tilespace().roomspace();
 	scr_draw_box(tilebox, COLOR_TILES);

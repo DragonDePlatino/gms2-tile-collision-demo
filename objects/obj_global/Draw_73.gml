@@ -1,3 +1,4 @@
+if (!global.debug_physics) return;
 
 // Draw collision under cursor.
 var mouse = new Pos(mouse_x, mouse_y);
