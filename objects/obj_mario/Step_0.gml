@@ -17,5 +17,4 @@ if (parent && jump_input) {
 	vel.y = -JUMP_VEL;
 }
 
-var collision = scr_collision_place();
 event_inherited();

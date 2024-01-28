@@ -1,7 +1,7 @@
 
-#macro RUN_MAX 2
-#macro RUN_ACCEL 0.1
-#macro FRICTION 0.1
+#macro RUN_MAX 1.5
+#macro RUN_ACCEL 0.125
+#macro FRICTION 0.125
 #macro JUMP_VEL 6
 #macro WEIGHT 0.25
 
